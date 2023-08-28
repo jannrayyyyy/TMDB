@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
 
 class CustomTextWidget extends StatelessWidget {
   final String text;
@@ -25,15 +24,16 @@ class CustomTextWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Text(text,
-        overflow: overflow,
-        maxLines: maxLine,
-        textAlign: alignment,
-        style: GoogleFonts.quicksand(
-            textStyle: TextStyle(
-                fontSize: fontSize,
-                fontWeight: fontWeight,
-                color: color,
-                shadows: shadow)));
+    return Text(
+      text,
+      overflow: overflow,
+      maxLines: maxLine,
+      textAlign: alignment,
+      style: TextStyle(
+          fontSize: fontSize,
+          fontWeight: fontWeight,
+          color: color,
+          shadows: shadow),
+    );
   }
 }
